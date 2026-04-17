@@ -9,6 +9,7 @@ const navItems = [
    {title: "Register", href: "/register"},
    {title: "Login", href: "/login"},
   { title: "Student Portal", href: "/student" },
+  { title: "Faculty Portal", href: "/faculty/dashboard" },
 ]
 
 export default function Navbar() {

@@ -3,12 +3,13 @@
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import {
   IconArrowLeft,
-  IconSettings,
   IconUserBolt,
   IconLayoutDashboard,
-  IconClipboardList,
   IconUsers,
+  IconClipboardCheck,
   IconMessageCircle,
+  IconCalendarEvent,
+  IconSettings,
   IconHome,
 } from "@tabler/icons-react";
 import { useState } from "react";
@@ -16,7 +17,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-export default function StudentLayout({
+export default function FacultyLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -24,42 +25,49 @@ export default function StudentLayout({
   const links = [
     {
       label: "Dashboard",
-      href: "/student/dashboard",
+      href: "/faculty/dashboard",
       icon: (
         <IconLayoutDashboard className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
-      label: "Enrollment",
-      href: "/student/enrollment",
-      icon: (
-        <IconClipboardList className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
-    },
-    {
-      label: "Team",
-      href: "/student/team",
+      label: "My Teams",
+      href: "/faculty/teams",
       icon: (
         <IconUsers className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
-      label: "Feedback",
-      href: "/student/feedback",
+      label: "Evaluations",
+      href: "/faculty/evaluations",
+      icon: (
+        <IconClipboardCheck className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Schedule",
+      href: "/faculty/schedule",
+      icon: (
+        <IconCalendarEvent className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Messages",
+      href: "/faculty/messages",
       icon: (
         <IconMessageCircle className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Profile",
-      href: "/student/profile",
+      href: "/faculty/profile",
       icon: (
         <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Settings",
-      href: "/student/settings",
+      href: "/faculty/settings",
       icon: (
         <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -101,11 +109,11 @@ export default function StudentLayout({
           <div>
             <SidebarLink
               link={{
-                label: "Arjun Sharma",
-                href: "/student/profile",
+                label: "Dr. Jane Doe",
+                href: "/faculty/profile",
                 icon: (
                   <div className="h-7 w-7 flex-shrink-0 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold">
-                    AS
+                    JD
                   </div>
                 ),
               }}
@@ -114,10 +122,11 @@ export default function StudentLayout({
         </SidebarBody>
       </Sidebar>
       <div className="flex-1 overflow-y-auto bg-white dark:bg-neutral-900 flex flex-col">
+        {/* Simple Top Bar for Dashboard */}
         <header className="h-16 border-b flex items-center justify-between px-6 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-md sticky top-0 z-10">
-           <h2 className="font-semibold text-lg">Student Portal</h2>
+           <h2 className="font-semibold text-lg">Faculty Portal</h2>
            <div className="flex items-center gap-4">
-              <span className="text-sm text-muted-foreground hidden md:inline">Phase 2 Active</span>
+              <span className="text-sm text-muted-foreground hidden md:inline">Academic Year 2025-26</span>
               <div className="h-8 w-8 rounded-full bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center">
                 <IconUserBolt className="h-4 w-4" />
               </div>
