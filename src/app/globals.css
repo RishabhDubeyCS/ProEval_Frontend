@@ -129,6 +129,25 @@
   }
 }
 
+@keyframes cell-ripple {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+}
+
+.animate-cell-ripple {
+  animation: cell-ripple var(--duration) ease-in-out var(--delay);
+}
+
 @layer components {
   .aceternity {
     @apply border-border/10 bg-background/95 text-foreground shadow-sm backdrop-blur-xl;
