@@ -182,7 +182,7 @@ export default function Home() {
                         <CardTitle className="text-sm">Feedback Received</CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-xs opacity-90">"Excellent progress on the backend architecture. Ensure the API documentation is updated."</p>
+                        <p className="text-xs opacity-90">"Excellent progress on the backend architecture  . Ensure the API documentation is updated."</p>
                       </CardContent>
                    </Card>
                 </div>
