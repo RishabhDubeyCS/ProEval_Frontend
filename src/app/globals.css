@@ -154,4 +154,18 @@
     background-image: radial-gradient(circle at top left, rgba(59,130,246,0.18), transparent 30%),
       radial-gradient(circle at bottom right, rgba(129,18,218,0.12), transparent 25%);
   }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }

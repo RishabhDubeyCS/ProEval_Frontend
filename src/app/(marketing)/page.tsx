@@ -72,12 +72,21 @@ export default function Home() {
             </Button>
           </div>
           
-          <div className="mt-12 flex flex-col items-center gap-4">
-            <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground/80">Trusted by Leading Institutions</p>
-            <div className="flex gap-8 grayscale opacity-50 dark:invert">
-              <div className="font-bold text-2xl tracking-tighter italic">MIT</div>
-              <div className="font-bold text-2xl tracking-tighter italic">STANFORD</div>
-              <div className="font-bold text-2xl tracking-tighter italic">HARVARD</div>
+          <div className="mt-16 flex flex-col items-center gap-6" suppressHydrationWarning>
+            <p className="text-xs font-black uppercase tracking-[0.3em] text-primary/60">The Innovation Ecosystem</p>
+            <div className="flex flex-wrap items-center justify-center gap-12 md:gap-24">
+              <div className="flex flex-col items-center group cursor-default">
+                <div className="text-4xl md:text-5xl font-black tracking-tighter text-neutral-900 dark:text-white group-hover:scale-110 transition-transform duration-500">1.2K+</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mt-2 group-hover:text-primary transition-colors">Evaluations Completed</div>
+              </div>
+              <div className="flex flex-col items-center group cursor-default">
+                <div className="text-4xl md:text-5xl font-black tracking-tighter text-neutral-900 dark:text-white group-hover:scale-110 transition-transform duration-500">450+</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mt-2 group-hover:text-primary transition-colors">Innovation Teams</div>
+              </div>
+              <div className="flex flex-col items-center group cursor-default">
+                <div className="text-4xl md:text-5xl font-black tracking-tighter text-neutral-900 dark:text-white group-hover:scale-110 transition-transform duration-500">85+</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mt-2 group-hover:text-primary transition-colors">IPs & Patents Filed</div>
+              </div>
             </div>
           </div>
         </div>

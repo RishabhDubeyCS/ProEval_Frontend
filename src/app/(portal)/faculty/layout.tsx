@@ -30,13 +30,7 @@ export default function FacultyLayout({
         <IconLayoutDashboard className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
-    {
-      label: "My Teams",
-      href: "/faculty/teams",
-      icon: (
-        <IconUsers className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
-    },
+    
     {
       label: "Evaluations",
       href: "/faculty/evaluations",
@@ -45,19 +39,20 @@ export default function FacultyLayout({
       ),
     },
     {
-      label: "Schedule",
-      href: "/faculty/schedule",
+      label: "My Teams",
+      href: "/faculty/teams",
+      icon: (
+        <IconUsers className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Student Project ",
+      href: "/faculty/studentproject",
       icon: (
         <IconCalendarEvent className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
-    {
-      label: "Messages",
-      href: "/faculty/messages",
-      icon: (
-        <IconMessageCircle className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
-    },
+    
     {
       label: "Profile",
       href: "/faculty/profile",
@@ -65,20 +60,8 @@ export default function FacultyLayout({
         <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
-    {
-      label: "Settings",
-      href: "/faculty/settings",
-      icon: (
-        <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
-    },
-    {
-      label: "Back to Home",
-      href: "/",
-      icon: (
-        <IconHome className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
-    },
+    
+   
     {
       label: "Logout",
       href: "/login",

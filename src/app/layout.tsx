@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "Advanced AI-powered student project evaluation and progress tracking system.",
 };
 
+import { Toaster } from "sonner";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,6 +31,7 @@ export default function RootLayout({
     >
       <body className="h-full flex flex-col bg-background text-foreground">
         {children}
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );
